@@ -1,0 +1,37 @@
+/* Game_Detail_Footer.css */
+.Footer {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  padding: 10px;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+}
+
+.addbtn,
+.backbtn {
+  background-color: #007bff; /* 버튼 배경색 */
+  border: none;
+  color: white; /* 텍스트 색상 */
+  padding: 10px 20px; /* 버튼 패딩 */
+  width: 500px;
+  height: 150px;
+  font-size: 2rem; /* 폰트 크기 */
+  font-weight: bold; /* 폰트 굵기 */
+  border-radius: 5px; /* 버튼 모서리 둥글게 */
+  transition: background-color 0.3s ease; /* 배경색 전환 효과 */
+  cursor: pointer;
+  margin: 10px; /* 버튼 간격 */
+}
+
+.addbtn:hover,
+.backbtn:hover {
+  background-color: #0056b3; /* 호버 시 배경색 */
+}
+
+.addbtn:disabled {
+  background-color: #d9534f; /* 비활성화 상태 색상 */
+  cursor: not-allowed; /* 비활성화 상태 커서 */
+}

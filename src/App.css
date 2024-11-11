@@ -1,0 +1,55 @@
+hr {
+  margin-top: 50px;
+	margin-bottom: 0px;
+  border: 0;
+  text-align: center;
+  
+  &:before {
+    content: "\2022 \2022 \2022";
+    font-size: 50px;
+    color: #4F8BCA;
+  }
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.categoryGameName { 
+	display: flex;
+	position: relative; 
+	font-family: 'Julius Sans One', sans-serif; 
+	color: rgb(215, 215, 215); 
+	letter-spacing: 2px; 
+	padding: 0 15px; 
+	font-size: 24px; 
+	margin-top: 20px; 
+	overflow: hidden; 
+	width: calc(100% - 45px); 
+	margin-left: 70px;
+}
+
+@media (max-width: 30%) {
+	#categoryGameName:after {
+			font-size: 15px;
+			margin-right: 5000px;
+			display: flex;
+	}
+}
+
+.categoryGameName:after { 
+	content: ""; 
+	position: absolute; 
+	height: 1px; 
+	top: 8px; 
+	margin-left: 170px;
+	margin-top: 10px; 
+	width: 84%; 
+	background: #404957; 
+}
